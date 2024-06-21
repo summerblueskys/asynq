@@ -11,7 +11,8 @@ import (
 	"sync"
 	"time"
 
-	"github.com/summerblueskys/asynq/internal/base"
+	"github.com/hibiken/asynq/internal/base"
+	"github.com/redis/go-redis/v9"
 )
 
 var errRedisDown = errors.New("testutil: redis is down")
